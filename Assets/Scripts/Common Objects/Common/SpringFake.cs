@@ -1,1 +1,0 @@
-public class SpringFake : Spring { }
