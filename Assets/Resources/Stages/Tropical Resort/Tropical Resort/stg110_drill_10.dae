@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2022-09-19T01:07:33Z</created>
+		<modified>2022-09-19T01:07:33Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="rso_o_my1_soil01-image" name="rso_o_my1_soil01">
+			<init_from>
+				<ref>rso_o_my1_soil01.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="drilldepth__ClodDepth__">
+			<instance_effect url="#drilldepth__ClodDepth__-fx" />
+		</material>
+		<material id="o_my1_soil01__ClodColor__">
+			<instance_effect url="#o_my1_soil01__ClodColor__-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="drilldepth__ClodDepth__-fx" name="drilldepth__ClodDepth__">
+			<profile_COMMON>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse />
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="o_my1_soil01__ClodColor__-fx" name="o_my1_soil01__ClodColor__">
+			<profile_COMMON>
+				<newparam sid="rso_o_my1_soil01-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_o_my1_soil01-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_o_my1_soil01-sampler">
+					<sampler2D>
+						<source>rso_o_my1_soil01-surface</source>
+						<instance_image url="#rso_o_my1_soil01-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_o_my1_soil01-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="93">-4635.1 159.0965 4485 -4627.449 159.0965 4485 -4635.101 90.00006 4485 -4627.095 97.29581 4485 -4536.736 89.99734 4485 -4536.74 96.79529 4485 -4439.9 89.99998 4485 -4446.66 97.87738 4485 -4439.9 160 4485 -4447.002 159.215 4485 -4428 239.0001 4485 -4436.193 228.6409 4485 -4439.907 254.8905 4485 -4536.74 228.4624 4485 -4449.979 268.4727 4485 -4462.874 277.1335 4485 -4458.866 285.1941 4485 -4478 289.0001 4485 -4478.295 280.4148 4485 -4536.702 280.4156 4485 -4536.702 289.0014 4485 -4628.065 280.4165 4485 -4635.1 289.0031 4485 -4635.1 229.1564 4485 -4536.74 159.0429 4485 -4627.783 229.1546 4485 -4428 228.7597 4485 -4428.001 160 4485 -4436.692 167.7122 4485 -4431.806 258.1343 4485 -4442.645 274.3554 4485</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="31" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="164">0.2901961 0.1921569 0.04313726 1 0.5058824 0.3529412 0.07843138 1 0.2352941 0.1529412 0.03529412 1 0.3490196 0.2431373 0.05490196 1 0.2862745 0.1843137 0.04313726 1 0.3568628 0.2470588 0.05490196 1 0.2666667 0.1764706 0.03529412 1 0.3960785 0.2784314 0.05882353 1 0.2627451 0.172549 0.03529412 1 0.4980392 0.3490196 0.07843138 1 0.5647059 0.5607843 0.454902 1 0.7686275 0.8039216 0.764706 1 0.8862746 0.937255 0.8196079 1 0.7803922 0.8274511 0.7843138 1 0.9058824 0.9568628 0.8313726 1 0.8980393 0.9450981 0.8196079 1 0.5803922 0.572549 0.4627451 1 0.4352942 0.4196079 0.4 1 0.7176471 0.7607844 0.7607844 1 0.7411765 0.7921569 0.7764707 1 0.4352942 0.4313726 0.4117647 1 0.7294118 0.7607844 0.7490196 1 0.3490196 0.3372549 0.3215686 1 0.4392157 0.4313726 0.4078432 1 0.7098039 0.572549 0.2470588 1 0.6980392 0.5647059 0.2470588 1 0.7215686 0.5882353 0.2509804 1 0.7098039 0.5764706 0.2509804 1 0.7058824 0.572549 0.2509804 1 0.7058824 0.572549 0.2470588 1 0.3843138 0.2941177 0.1254902 1 0.4039216 0.3019608 0.1294118 1 0.3137255 0.2352941 0.09803922 1 0.6784314 0.5372549 0.2392157 1 0.345098 0.2627451 0.1019608 1 0.5058824 0.3568628 0.07843138 1 0.5921569 0.572549 0.4745098 1 0.7607844 0.8078432 0.7725491 1 0.4078432 0.3137255 0.1372549 1 0.5294118 0.4078432 0.1490196 1 0.4078432 0.3176471 0.1647059 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="41" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="62">0.001708984 1.493896 0.1352539 1.493652 0.001953125 0.002197266 0.1411133 0.1577148 1.756592 0.002197266 1.756348 0.1489258 3.483887 0.002197266 3.367432 0.1706543 3.483887 1.513184 3.35791 1.499512 3.698242 3.218506 3.554443 2.996826 3.486328 3.560791 1.756348 2.991943 3.305664 3.854736 3.075439 4.041748 3.146973 4.215576 2.80542 4.297852 2.800049 4.112549 1.75708 4.112549 1.757324 4.296143 0.1242676 4.114014 0.001953125 4.297852 0.001953125 3.006104 1.756104 1.497559 0.1306152 3.005859 3.698242 2.997559 3.698242 1.513184 3.542969 1.679688 3.630127 3.631592 3.436768 3.981689</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="31" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="o_my1_soil01__ClodColor__" count="45">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 2 2 1 1 1 0 0 0 3 3 3 1 1 1 2 2 2 4 4 4 3 3 3 2 2 2 5 5 5 3 3 3 4 4 4 6 6 6 5 5 5 4 4 4 7 7 7 5 5 5 6 6 6 8 8 8 7 7 7 6 6 6 9 9 9 7 7 7 8 8 8 12 12 12 11 11 11 10 10 10 13 13 13 11 11 11 12 12 12 14 14 14 13 13 13 12 12 12 15 15 15 13 13 13 14 14 14 16 16 16 15 15 15 14 14 14 17 17 17 15 15 15 16 16 16 18 18 18 13 13 13 15 15 15 19 19 19 13 13 13 18 18 18 20 20 20 19 19 19 18 18 18 21 21 21 19 19 19 20 20 20 22 22 22 21 21 21 20 20 20 23 23 23 21 21 21 22 22 22 13 26 13 9 25 9 11 24 11 24 27 24 9 25 9 13 26 13 25 28 25 24 27 24 13 26 13 1 29 1 24 27 24 25 28 25 0 30 0 1 29 1 25 28 25 11 24 11 27 32 27 26 31 26 28 33 28 27 32 27 11 24 11 9 25 9 28 33 28 11 24 11 8 34 8 28 33 28 9 25 9 9 9 9 5 5 5 7 7 7 24 35 24 5 5 5 9 9 9 24 35 24 3 3 3 5 5 5 1 1 1 3 3 3 24 35 24 29 36 29 12 12 12 10 10 10 30 17 30 12 12 12 29 36 29 30 17 30 14 14 14 12 12 12 16 16 16 14 14 14 30 17 30 18 18 18 17 17 17 20 20 20 15 15 15 17 17 17 18 18 18 19 19 19 25 37 25 13 13 13 21 21 21 25 37 25 19 19 19 8 34 8 27 32 27 28 33 28 23 38 23 0 30 0 25 28 25 11 11 11 26 40 26 10 39 10 25 37 25 21 21 21 23 23 23</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon1" name="polygon1">
+			<mesh>
+				<source id="polygon1_Positions">
+					<float_array id="polygon1_PosArr" count="78">-4442.915 274.0057 4482.78 -4470.169 283.4683 4447 -4459.048 284.7131 4483.038 -4488.008 287.2586 4447 -4478.008 288.6527 4483.039 -4534.462 287.2602 4447 -4534.462 288.2603 4485 -4610.108 287.2617 4447 -4635.108 288.2618 4485 -4610.108 186.8421 4447 -4635.108 186.8421 4485 -4634.508 181.5737 4447 -4634.508 90.50111 4447 -4534.921 188.8756 4447 -4533.76 90.4984 4447 -4450.008 120.9914 4447 -4432.104 90.50104 4447 -4428.362 120.9914 4483.021 -4432.104 90.50104 4485 -4457.538 270.8178 4447 -4432.164 257.8283 4482.78 -4455.008 239.0002 4447 -4455.065 255.7656 4447 -4533.76 90.4984 4485 -4635.109 90.50111 4485 -4428.407 239.0002 4482.78</float_array>
+					<technique_common>
+						<accessor source="#polygon1_PosArr" count="26" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon1_Vertices">
+					<input semantic="POSITION" source="#polygon1_Positions" />
+				</vertices>
+				<triangles material="drilldepth__ClodDepth__" count="38">
+					<input semantic="VERTEX" source="#polygon1_Vertices" offset="0" />
+					<p>2 1 0 3 1 2 4 3 2 5 3 4 6 5 4 7 5 6 8 7 6 9 7 8 10 9 8 11 9 10 12 11 10 13 11 12 14 13 12 15 13 14 16 15 14 17 15 16 18 17 16 13 3 5 1 3 13 19 1 13 0 1 19 20 0 19 21 15 17 13 15 21 22 13 21 19 13 22 20 19 22 13 9 11 7 9 13 5 7 13 16 23 18 14 23 16 14 24 23 12 24 14 22 25 20 21 25 22 24 12 10 17 25 21</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="3">stg110_drill_10 10_drill_color 10_drill_depth</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="3">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="48">1 0 0 4527.038 0 1 0 -477.8693 0 0 1 -4519.464 0 0 0 1 1 0 0 4531.5 0 1 0 -189.5002 0 0 1 -4485 0 0 0 1 1 0 0 4531.37 0 1 0 -189.6242 0 0 1 -4474.693 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="3" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="31">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon1_Controller">
+			<skin source="#polygon1">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon1_Joints">
+					<Name_array id="polygon1_JointArr" count="3">stg110_drill_10 10_drill_color 10_drill_depth</Name_array>
+					<technique_common>
+						<accessor source="#polygon1_JointArr" count="3">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Matrices">
+					<float_array id="polygon1_MatArr" count="48">1 0 0 4527.038 0 1 0 -477.8693 0 0 1 -4519.464 0 0 0 1 1 0 0 4531.5 0 1 0 -189.5002 0 0 1 -4485 0 0 0 1 1 0 0 4531.37 0 1 0 -189.6242 0 0 1 -4474.693 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_MatArr" count="3" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Weights">
+					<float_array id="polygon1_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon1_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon1_Matrices" />
+				</joints>
+				<vertex_weights count="26">
+					<input semantic="JOINT" offset="0" source="#polygon1_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon1_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="stg110_drill_10" name="stg110_drill_10" sid="stg110_drill_10" type="JOINT">
+				<translate>-4527.038 477.8693 4519.464</translate>
+				<node id="10_drill_color" name="10_drill_color" sid="10_drill_color" type="JOINT">
+					<translate>-4.462891 -288.3691 -34.46386</translate>
+				</node>
+				<node id="10_drill_depth" name="10_drill_depth" sid="10_drill_depth" type="JOINT">
+					<translate>-4.339843 -288.2451 -44.7705</translate>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#stg110_drill_10</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="o_my1_soil01__ClodColor__" target="#o_my1_soil01__ClodColor__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon1" name="polygon1" type="NODE">
+				<instance_controller url="#polygon1_Controller">
+					<skeleton>#stg110_drill_10</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="drilldepth__ClodDepth__" target="#drilldepth__ClodDepth__" />
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2022-09-19T01:34:08Z</created>
+		<modified>2022-09-19T01:34:08Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="rso_a_tb1_cmn_light-image" name="rso_a_tb1_cmn_light">
+			<init_from>
+				<ref>rso_a_tb1_cmn_light.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="warning_lampA__MatLuminouseAdd__F__">
+			<instance_effect url="#warning_lampA__MatLuminouseAdd__F__-fx" />
+		</material>
+		<material id="warning_lampB__MatLuminouseAdd__F__">
+			<instance_effect url="#warning_lampB__MatLuminouseAdd__F__-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="warning_lampA__MatLuminouseAdd__F__-fx" name="warning_lampA__MatLuminouseAdd__F__">
+			<profile_COMMON>
+				<newparam sid="rso_a_tb1_cmn_light-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_a_tb1_cmn_light-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_a_tb1_cmn_light-sampler">
+					<sampler2D>
+						<source>rso_a_tb1_cmn_light-surface</source>
+						<instance_image url="#rso_a_tb1_cmn_light-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_a_tb1_cmn_light-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="warning_lampB__MatLuminouseAdd__F__-fx" name="warning_lampB__MatLuminouseAdd__F__">
+			<profile_COMMON>
+				<newparam sid="rso_a_tb1_cmn_light-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_a_tb1_cmn_light-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_a_tb1_cmn_light-sampler">
+					<sampler2D>
+						<source>rso_a_tb1_cmn_light-surface</source>
+						<instance_image url="#rso_a_tb1_cmn_light-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_a_tb1_cmn_light-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="72">758.2791 1036.528 -2293.704 740.2791 1036.528 -2293.704 758.2791 1054.528 -2293.704 740.2791 1054.528 -2293.704 758.2791 786.1339 -2293.704 740.2791 786.1339 -2293.704 758.2791 804.1339 -2293.704 740.2791 804.1339 -2293.704 825.0931 602.4725 -2293.704 807.0931 602.4725 -2293.704 825.0931 620.4725 -2293.704 807.0931 620.4725 -2293.704 792.0361 602.4725 -2293.704 774.0362 602.4725 -2293.704 792.0361 620.4725 -2293.704 774.0362 620.4725 -2293.704 866.0358 677.3821 -2293.704 848.0358 677.3821 -2293.704 866.0358 695.3821 -2293.704 848.0358 695.3821 -2293.704 672.9071 695.9996 -2293.704 654.9071 695.9996 -2293.704 672.9071 713.9996 -2293.704 654.9071 713.9996 -2293.704</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="24" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="4">0.7019608 0.09803922 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="8">0.9978333 0.002166748 0 0.002166748 0.9978333 1 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="4" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="warning_lampA__MatLuminouseAdd__F__" count="12">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 0 2 1 0 1 0 0 0 3 0 3 1 0 1 2 0 2 6 0 2 5 0 1 4 0 0 7 0 3 5 0 1 6 0 2 10 0 2 9 0 1 8 0 0 11 0 3 9 0 1 10 0 2 14 0 2 13 0 1 12 0 0 15 0 3 13 0 1 14 0 2 18 0 2 17 0 1 16 0 0 19 0 3 17 0 1 18 0 2 22 0 2 21 0 1 20 0 0 23 0 3 21 0 1 22 0 2</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon1" name="polygon1">
+			<mesh>
+				<source id="polygon1_Positions">
+					<float_array id="polygon1_PosArr" count="72">782.9822 1137.191 -2293.704 764.9822 1137.191 -2293.704 782.9822 1155.191 -2293.704 764.9822 1155.191 -2293.704 782.9822 886.7971 -2293.704 764.9822 886.7971 -2293.704 782.9822 904.7971 -2293.704 764.9822 904.7971 -2293.704 881.0314 566.2613 -2293.704 863.0314 566.2613 -2293.704 881.0314 584.2613 -2293.704 863.0314 584.2613 -2293.704 682.8859 581.5215 -2293.704 664.8859 581.5215 -2293.704 682.8859 599.5215 -2293.704 664.8859 599.5215 -2293.704 648.93 581.5215 -2293.704 630.93 581.5215 -2293.704 648.93 599.5215 -2293.704 630.93 599.5215 -2293.704 805.962 720.6788 -2293.704 787.962 720.6788 -2293.704 805.962 738.6788 -2293.704 787.962 738.6788 -2293.704</float_array>
+					<technique_common>
+						<accessor source="#polygon1_PosArr" count="24" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Colors0">
+					<float_array id="polygon1_ColorArr0" count="4">0.7019608 0.09803922 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_UVs0">
+					<float_array id="polygon1_UVArr0" count="8">0.9978333 0.002166748 0 0.002166748 0.9978333 1 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_UVArr0" count="4" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon1_Vertices">
+					<input semantic="POSITION" source="#polygon1_Positions" />
+				</vertices>
+				<triangles material="warning_lampB__MatLuminouseAdd__F__" count="12">
+					<input semantic="VERTEX" source="#polygon1_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon1_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon1_UVs0" set="0" offset="2" />
+					<p>2 0 2 1 0 1 0 0 0 3 0 3 1 0 1 2 0 2 6 0 2 5 0 1 4 0 0 7 0 3 5 0 1 6 0 2 10 0 2 9 0 1 8 0 0 11 0 3 9 0 1 10 0 2 14 0 2 13 0 1 12 0 0 15 0 3 13 0 1 14 0 2 18 0 2 17 0 1 16 0 0 19 0 3 17 0 1 18 0 2 22 0 2 21 0 1 20 0 0 23 0 3 21 0 1 22 0 2</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="2">stg190_MotLamp_02 w_lamp01</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="2">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.111111 0 0 -744.1683 0 0 1.111111 2548.56 0 -1.111111 0 783.3329 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="2" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="24">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon1_Controller">
+			<skin source="#polygon1">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon1_Joints">
+					<Name_array id="polygon1_JointArr" count="2">stg190_MotLamp_02 w_lamp01</Name_array>
+					<technique_common>
+						<accessor source="#polygon1_JointArr" count="2">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Matrices">
+					<float_array id="polygon1_MatArr" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.111111 0 0 -744.1683 0 0 1.111111 2548.56 0 -1.111111 0 783.3329 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_MatArr" count="2" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Weights">
+					<float_array id="polygon1_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon1_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon1_Matrices" />
+				</joints>
+				<vertex_weights count="24">
+					<input semantic="JOINT" offset="0" source="#polygon1_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon1_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="stg190_MotLamp_02" name="stg190_MotLamp_02" sid="stg190_MotLamp_02" type="JOINT">
+				<node id="w_lamp01" name="w_lamp01" sid="w_lamp01" type="JOINT">
+					<translate>669.7515 704.9996 -2293.704</translate>
+					<rotate>1 0 0 90</rotate>
+					<scale>0.9 0.9 0.9</scale>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#stg190_MotLamp_02</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="warning_lampA__MatLuminouseAdd__F__" target="#warning_lampA__MatLuminouseAdd__F__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon1" name="polygon1" type="NODE">
+				<instance_controller url="#polygon1_Controller">
+					<skeleton>#stg190_MotLamp_02</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="warning_lampB__MatLuminouseAdd__F__" target="#warning_lampB__MatLuminouseAdd__F__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

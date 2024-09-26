@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2022-09-19T01:16:42Z</created>
+		<modified>2022-09-19T01:16:42Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="rso_b_cw1_aircar_bottom-image" name="rso_b_cw1_aircar_bottom">
+			<init_from>
+				<ref>rso_b_cw1_aircar_bottom.png</ref>
+			</init_from>
+		</image>
+		<image id="rso_o_cw1_aircar_body01-image" name="rso_o_cw1_aircar_body01">
+			<init_from>
+				<ref>rso_o_cw1_aircar_body01.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="b_cw1_aircar_bottom__LuminouseO__">
+			<instance_effect url="#b_cw1_aircar_bottom__LuminouseO__-fx" />
+		</material>
+		<material id="o_cw1_aircar_body01__Opacity__">
+			<instance_effect url="#o_cw1_aircar_body01__Opacity__-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="b_cw1_aircar_bottom__LuminouseO__-fx" name="b_cw1_aircar_bottom__LuminouseO__">
+			<profile_COMMON>
+				<newparam sid="rso_b_cw1_aircar_bottom-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_b_cw1_aircar_bottom-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_b_cw1_aircar_bottom-sampler">
+					<sampler2D>
+						<source>rso_b_cw1_aircar_bottom-surface</source>
+						<instance_image url="#rso_b_cw1_aircar_bottom-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_b_cw1_aircar_bottom-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="o_cw1_aircar_body01__Opacity__-fx" name="o_cw1_aircar_body01__Opacity__">
+			<profile_COMMON>
+				<newparam sid="rso_o_cw1_aircar_body01-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_o_cw1_aircar_body01-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_o_cw1_aircar_body01-sampler">
+					<sampler2D>
+						<source>rso_o_cw1_aircar_body01-surface</source>
+						<instance_image url="#rso_o_cw1_aircar_body01-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_o_cw1_aircar_body01-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="180">19.76353 -13.85103 107.5764 0 -13.85103 115.0629 21.28586 -9.49437 107.8725 0 -9.712331 115.8474 0 5.981239 85.6496 -21.28586 -9.49437 107.8725 -23.02726 2.598076 83.14098 -38.98911 -5.421069 80.53506 -44.3686 0.7700471 34.78185 -42.14249 -13.85107 36.15301 -36.967 -13.85108 0.3113824 -43.16105 3.050753 -40.67524 -29.02762 23.05044 -61.99637 -31.75346 12.50768 -5.60088 -24.91253 29.15248 -20.0994 0 16.98675 11.14328 0 33.78485 -15.62145 24.91253 29.15248 -20.0994 0 30.10747 -54.24501 29.02762 23.05044 -61.99637 0 26.21307 -82.29821 39.48598 2.463974 -0.2063274 44.3686 0.7700471 34.78185 31.75346 12.50768 -5.60088 20.85467 11.42766 32.90038 -20.85467 11.42766 32.90038 37.27177 -13.85105 79.19996 38.98911 -5.421069 80.53506 42.14249 -13.85107 36.15301 36.967 -13.85108 0.3113824 0 3.917758 -94.58396 -30.53479 3.917764 -88.25272 -27.56894 -13.85114 -84.46279 -39.12256 3.725402 -77.69697 -35.30022 -13.79636 -75.23222 -39.67511 -13.85111 -38.80643 39.67511 -13.85111 -38.80643 43.16105 3.050753 -40.67524 35.30022 -13.79636 -75.23221 39.12256 3.725402 -77.69697 27.56894 -13.85114 -84.46279 30.53479 3.917764 -88.25272 -39.48598 2.463974 -0.2063274 39.11559 -10.70811 -39.54858 39.93629 -4.48627 -43.98415 65.98469 -13.85114 -72.5809 35.04118 -4.57784 -74.43634 66.82965 -13.85114 -84.76562 -19.76353 -13.85103 107.5764 -37.27177 -13.85105 79.19996 23.02726 2.598076 83.14098 34.08973 -10.66389 -74.39594 0 21.12508 -75.10335 -66.82964 -13.85114 -84.76563 -65.98468 -13.85114 -72.58089 -34.08973 -10.66389 -74.39594 -39.11559 -10.70811 -39.54858 -39.93629 -4.48627 -43.98415 -35.04118 -4.57784 -74.43634 0 -13.85114 -88.03445</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="60" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="28">1 1 1 1 0.4235294 0.4431373 0.4941177 1 0.4862745 0.509804 0.5686275 1 0.5607843 0.5843138 0.6313726 1 0.7450981 0.7529413 0.7764707 1 0.427451 0.4509804 0.4980392 1 0.427451 0.4470589 0.4980392 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="7" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="92">0.1619873 0.04177856 0.1254272 0.0135498 0.1586304 0.059021 0.1251221 0.02856445 0.1251221 0.1438293 0.1629028 0.1539307 0.1982117 0.1516724 0.2098694 0.3340454 0.2364807 0.3121643 0.2364807 0.4656067 0.08889771 0.2002869 0.0447998 0.2824097 0.07244873 0.07119751 0.03704834 0.1305542 0.004730225 0.007293701 0.004730225 0.1094666 0.004730225 0.256897 0.004730225 0.3745728 0.210022 0.469696 0.1928406 0.492157 0.1662598 0.3451843 0.1251221 0.4282532 0.2145386 0.1433716 0.06756592 0.4884338 0.07400513 0.4032898 0.1010742 0.4234619 0.0836792 0.3408813 0.1169128 0.3392944 0.1169128 0.1912537 0.1169128 0.04660034 0.2493591 0.1834106 0.2440491 0.1812134 0.2410278 0.03134155 0.2208557 0.1637268 0.2322083 0.01196289 0.0914917 0.04873657 0.0447998 0.2826233 0.002716064 0.3879395 0.02276611 0.4796448 0.04467773 0.2753601 0.005065918 0.3685913 0.005065918 0.3570251 0.0958252 0.4976807 0.2312927 0.01309204 0.2296448 0.1673584 0.2250671 0.1669006</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="46" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="o_cw1_aircar_body01__Opacity__" count="90">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 0 2 1 0 1 0 0 0 3 0 3 1 0 1 2 0 2 4 1 4 3 0 3 2 0 2 5 0 2 3 0 3 4 1 4 6 2 5 5 0 2 4 1 4 7 0 6 5 0 2 6 2 5 8 2 7 7 0 6 6 2 5 9 0 8 7 0 6 8 2 7 10 0 9 9 0 8 8 2 7 13 3 12 12 1 11 11 2 10 14 1 13 12 1 11 13 3 12 15 3 14 14 1 13 13 3 12 16 1 15 14 1 13 15 3 14 17 1 13 16 1 15 15 3 14 18 1 16 16 1 15 17 1 13 19 1 11 18 1 16 17 1 13 20 1 17 18 1 16 19 1 11 23 3 19 22 2 7 21 2 18 24 1 20 22 2 7 23 3 19 15 3 21 24 1 20 23 3 19 4 1 4 24 1 20 15 3 21 25 1 20 4 1 4 15 3 21 6 2 5 4 1 4 25 1 20 8 2 7 6 2 5 25 1 20 26 0 22 2 0 2 0 0 0 27 0 6 2 0 2 26 0 22 28 0 8 27 0 6 26 0 22 22 2 7 27 0 6 28 0 8 29 0 9 22 2 7 28 0 8 21 2 18 22 2 7 29 0 9 32 0 25 31 2 24 30 2 23 33 2 26 31 2 24 32 0 25 34 0 27 33 2 26 32 0 25 11 2 10 33 2 26 34 0 27 35 0 28 11 2 10 34 0 27 10 0 29 11 2 10 35 0 28 38 0 27 37 2 10 36 0 28 39 2 26 37 2 10 38 0 27 40 0 25 39 2 26 38 0 27 41 2 24 39 2 26 40 0 25 30 2 23 41 2 24 40 0 25 13 3 19 25 1 20 15 3 21 8 2 7 25 1 20 13 3 19 42 2 18 8 2 7 13 3 19 10 0 9 8 2 7 42 2 18 45 5 32 44 1 31 43 4 30 46 1 33 44 1 31 45 5 32 47 6 34 46 1 33 45 5 32 5 0 2 1 0 1 3 0 3 48 0 0 1 0 1 5 0 2 49 0 22 48 0 0 5 0 2 37 2 10 29 0 29 36 0 28 21 2 35 29 0 29 37 2 10 23 3 12 21 2 35 37 2 10 19 1 11 39 2 26 41 2 24 37 2 10 39 2 26 19 1 11 23 3 12 37 2 10 19 1 11 50 2 5 4 1 4 2 0 2 24 1 20 4 1 4 50 2 5 22 2 7 24 1 20 50 2 5 51 4 33 45 0 32 43 4 31 47 0 34 45 0 32 51 4 33 41 2 24 52 1 37 19 1 36 30 2 38 52 1 37 41 2 24 52 1 41 20 1 40 19 1 39 12 1 39 20 1 40 52 1 41 55 4 33 54 0 32 53 0 34 56 4 31 54 0 32 55 4 33 57 1 31 54 1 32 56 4 30 58 1 33 54 1 32 57 1 31 31 2 24 52 1 37 30 2 38 12 1 36 52 1 37 31 2 24 7 0 6 49 0 22 5 0 2 9 0 8 49 0 22 7 0 6 59 0 42 30 2 23 40 0 25 32 0 25 30 2 23 59 0 42 33 2 26 12 1 11 31 2 24 11 2 10 12 1 11 33 2 26 42 2 35 11 2 10 10 0 29 13 3 12 11 2 10 42 2 35 17 1 13 23 3 12 19 1 11 15 3 14 23 3 12 17 1 13 12 1 11 18 1 16 20 1 17 14 1 13 18 1 16 12 1 11 27 0 6 50 2 5 2 0 2 22 2 7 50 2 5 27 0 6 51 4 45 46 1 44 47 6 43 58 1 44 55 4 45 53 1 43 53 1 34 54 1 32 58 1 33 16 1 15 18 1 16 14 1 13</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon1" name="polygon1">
+			<mesh>
+				<source id="polygon1_Positions">
+					<float_array id="polygon1_PosArr" count="48">19.76353 -13.85103 107.5764 37.27177 -13.85105 79.19996 0 -13.85103 115.0629 42.14249 -13.85107 36.15301 36.967 -13.85108 0.3113824 -27.56894 -13.85114 -84.46279 -35.30022 -13.79636 -75.23222 0 -13.85114 -88.03445 -39.67511 -13.85111 -38.80643 -36.967 -13.85108 0.3113824 27.56894 -13.85114 -84.46279 35.30022 -13.79636 -75.23221 39.67511 -13.85111 -38.80643 -19.76353 -13.85103 107.5764 -37.27177 -13.85105 79.19996 -42.14249 -13.85107 36.15301</float_array>
+					<technique_common>
+						<accessor source="#polygon1_PosArr" count="16" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Colors0">
+					<float_array id="polygon1_ColorArr0" count="4">1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_UVs0">
+					<float_array id="polygon1_UVArr0" count="18">0.4299927 0.03909302 0.4740295 0.1748352 0.3802795 0.003265381 0.4862976 0.3807373 0.4732666 0.5522156 0.4496155 0.9577332 0.4690857 0.9135742 0.3802795 0.974823 0.480072 0.7393188</float_array>
+					<technique_common>
+						<accessor source="#polygon1_UVArr0" count="9" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon1_Vertices">
+					<input semantic="POSITION" source="#polygon1_Positions" />
+				</vertices>
+				<triangles material="b_cw1_aircar_bottom__LuminouseO__" count="14">
+					<input semantic="VERTEX" source="#polygon1_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon1_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon1_UVs0" set="0" offset="2" />
+					<p>2 0 2 1 0 1 0 0 0 3 0 3 1 0 1 2 0 2 4 0 4 3 0 3 2 0 2 7 0 7 6 0 6 5 0 5 8 0 8 6 0 6 7 0 7 9 0 4 8 0 8 7 0 7 11 0 6 7 0 7 10 0 5 12 0 8 7 0 7 11 0 6 4 0 4 7 0 7 12 0 8 2 0 2 7 0 7 4 0 4 14 0 1 2 0 2 13 0 0 15 0 3 2 0 2 14 0 1 9 0 4 2 0 2 15 0 3 7 0 7 2 0 2 9 0 4</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="1">stg100_obj_aircar03</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="16">1 0 0 0 0 1 -1.745138E-07 0 0 1.745138E-07 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="1" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="60">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon1_Controller">
+			<skin source="#polygon1">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon1_Joints">
+					<Name_array id="polygon1_JointArr" count="1">stg100_obj_aircar03</Name_array>
+					<technique_common>
+						<accessor source="#polygon1_JointArr" count="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Matrices">
+					<float_array id="polygon1_MatArr" count="16">1 0 0 0 0 1 -1.745138E-07 0 0 1.745138E-07 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_MatArr" count="1" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Weights">
+					<float_array id="polygon1_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon1_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon1_Matrices" />
+				</joints>
+				<vertex_weights count="16">
+					<input semantic="JOINT" offset="0" source="#polygon1_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon1_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="stg100_obj_aircar03" name="stg100_obj_aircar03" sid="stg100_obj_aircar03" type="JOINT">
+				<rotate>1 0 0 -1E-05</rotate>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#stg100_obj_aircar03</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="o_cw1_aircar_body01__Opacity__" target="#o_cw1_aircar_body01__Opacity__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon1" name="polygon1" type="NODE">
+				<instance_controller url="#polygon1_Controller">
+					<skeleton>#stg100_obj_aircar03</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="b_cw1_aircar_bottom__LuminouseO__" target="#b_cw1_aircar_bottom__LuminouseO__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

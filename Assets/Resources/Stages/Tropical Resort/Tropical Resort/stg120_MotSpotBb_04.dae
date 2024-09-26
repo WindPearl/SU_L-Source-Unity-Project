@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2022-09-19T01:25:34Z</created>
+		<modified>2022-09-19T01:25:34Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="rso_a_ma1_lightA-image" name="rso_a_ma1_lightA">
+			<init_from>
+				<ref>rso_a_ma1_lightA.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="stg110_spotlight__Add__F__">
+			<instance_effect url="#stg110_spotlight__Add__F__-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="stg110_spotlight__Add__F__-fx" name="stg110_spotlight__Add__F__">
+			<profile_COMMON>
+				<newparam sid="rso_a_ma1_lightA-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_a_ma1_lightA-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_a_ma1_lightA-sampler">
+					<sampler2D>
+						<source>rso_a_ma1_lightA-surface</source>
+						<instance_image url="#rso_a_ma1_lightA-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_a_ma1_lightA-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="36">2823.8 265.7471 1800.44 2841.656 363.2491 1782.584 2817.599 41.94389 1806.641 2842.215 40.33225 1782.025 2825.089 -482.8364 1799.151 2866.831 38.72041 1757.409 2842.776 -483.9944 1781.464 2818.721 -1006.709 1805.519 2797.204 -1005.301 1827.036 2807.402 -481.6783 1816.838 2863.869 361.7948 1760.371 2875.279 262.3768 1748.961</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="12" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="16">0.03529412 0.03529412 0.03529412 1 0.03137255 0.2745098 0.2235294 1 0.03137255 0.3294118 0.2666667 1 0.03137255 0.1843137 0.1529412 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="4" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="24">0 1 0.3486938 1 0.1585693 0.7511292 0.5 0.75 0.5 0.6255493 0.8414307 0.7511292 0.7614441 0.6255493 0.681427 0.5 0.318573 0.5 0.2385559 0.6255493 0.6513062 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="12" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="stg110_spotlight__Add__F__" count="12">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 1 2 1 0 1 0 0 0 3 2 3 1 0 1 2 1 2 4 2 4 3 2 3 2 1 2 5 1 5 3 2 3 4 2 4 6 3 6 5 1 5 4 2 4 4 2 4 7 0 7 6 3 6 8 0 8 7 0 7 4 2 4 9 3 9 8 0 8 4 2 4 3 2 3 10 0 10 1 0 1 5 1 5 10 0 10 3 2 3 9 3 9 4 2 4 2 1 2 10 0 10 5 1 5 11 0 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon1" name="polygon1">
+			<mesh>
+				<source id="polygon1_Positions">
+					<float_array id="polygon1_PosArr" count="36">2195.854 993.1676 1820.218 2194.55 1076.111 1806.094 2199.093 795.1222 1788.508 2199.093 799.6987 1750.634 2206.235 360.918 1697.613 2199.093 804.2751 1712.76 2206.235 364.1729 1670.677 2206.235 357.6631 1724.55 2212.666 -36.6997 1670.935 2212.666 -31.60991 1628.814 2194.55 1081.366 1762.61 2195.854 1004.174 1729.135</float_array>
+					<technique_common>
+						<accessor source="#polygon1_PosArr" count="12" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Colors0">
+					<float_array id="polygon1_ColorArr0" count="16">0.03529412 0.03529412 0.03529412 1 0.2745098 0.03137255 0.2470588 1 0.3294118 0.03137255 0.2980392 1 0.1843137 0.03137255 0.1647059 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_ColorArr0" count="4" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_UVs0">
+					<float_array id="polygon1_UVArr0" count="24">0 1 0.3486938 1 0.1585693 0.7511292 0.5 0.75 0.5 0.5627747 0.8414307 0.7511292 0.7214355 0.5627747 0.2785645 0.5627747 0.318573 0.5 0.681427 0.5 0.6513062 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_UVArr0" count="12" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon1_Vertices">
+					<input semantic="POSITION" source="#polygon1_Positions" />
+				</vertices>
+				<triangles material="stg110_spotlight__Add__F__" count="12">
+					<input semantic="VERTEX" source="#polygon1_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon1_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon1_UVs0" set="0" offset="2" />
+					<p>2 1 2 1 0 1 0 0 0 3 2 3 1 0 1 2 1 2 4 2 4 3 2 3 2 1 2 5 1 5 3 2 3 4 2 4 6 3 6 5 1 5 4 2 4 7 3 7 4 2 4 2 1 2 8 0 8 4 2 4 7 3 7 9 0 9 4 2 4 8 0 8 6 3 6 4 2 4 9 0 9 3 2 3 10 0 10 1 0 1 5 1 5 10 0 10 3 2 3 10 0 10 5 1 5 11 0 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon2" name="polygon2">
+			<mesh>
+				<source id="polygon2_Positions">
+					<float_array id="polygon2_PosArr" count="36">4023.495 1096.431 1880.525 4023.495 1184.26 1915.049 4023.495 953.8049 1880.368 4023.495 952.1119 1937.299 4023.495 524.5981 1924.586 4023.495 950.4188 1994.23 4023.495 523.2691 1969.273 4023.495 525.927 1879.899 4023.495 -49.71109 1879.267 4023.495 1182.527 1973.305 4023.495 -51.38923 1935.697 4023.495 1092.802 2002.549</float_array>
+					<technique_common>
+						<accessor source="#polygon2_PosArr" count="12" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Colors0">
+					<float_array id="polygon2_ColorArr0" count="16">0.03529412 0.03529412 0.03529412 1 0.03137255 0.2745098 0.2235294 1 0.03137255 0.3294118 0.2666667 1 0.03137255 0.1843137 0.1529412 1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_ColorArr0" count="4" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_UVs0">
+					<float_array id="polygon2_UVArr0" count="24">0 1 0.3486938 1 0.145874 0.7763672 0.5 0.7763672 0.5 0.631897 0.854126 0.7763672 0.7626343 0.632782 0.2373657 0.632782 0.318573 0.5 0.6513062 1 0.681427 0.5 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_UVArr0" count="12" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon2_Vertices">
+					<input semantic="POSITION" source="#polygon2_Positions" />
+				</vertices>
+				<triangles material="stg110_spotlight__Add__F__" count="12">
+					<input semantic="VERTEX" source="#polygon2_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon2_Colors0" set="0" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon2_UVs0" set="0" offset="2" />
+					<p>2 1 2 1 0 1 0 0 0 3 2 3 1 0 1 2 1 2 4 2 4 3 2 3 2 1 2 5 1 5 3 2 3 4 2 4 6 3 6 5 1 5 4 2 4 7 3 7 4 2 4 2 1 2 8 0 8 4 2 4 7 3 7 3 2 3 9 0 9 1 0 1 5 1 5 9 0 9 3 2 3 10 0 10 4 2 4 8 0 8 6 3 6 4 2 4 10 0 10 9 0 9 5 1 5 11 0 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="4">stg120_MotSpotBb 04__mot_spotDb 04__mot_spotDf 04__mot_spotFa</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="4">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="64">1 0 0 -3000 0 1 0 -8.7E-05 0 0 1 -2000 0 0 0 1 0.9091017 -0.05952062 -0.9090405 -961.5323 0.03048784 0.9313194 -0.03048535 906.6729 0.2845929 -5.915396E-07 0.2845736 -1315.991 0 0 0 1 -1.038938E-07 0.1108476 -0.9173391 1517.281 -0.01840752 1.130883 0.1366515 -146.103 1.023082 0.01641406 0.001983295 -2266.451 0 0 0 1 -1.90317E-07 -0.04620326 1.553655 -2965.903 -1.524596E-09 0.9463056 0.02814165 -5.843784 -0.3762597 6.059565E-10 -4.607242E-08 1513.879 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="4" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="12">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon1_Controller">
+			<skin source="#polygon1">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon1_Joints">
+					<Name_array id="polygon1_JointArr" count="4">stg120_MotSpotBb 04__mot_spotDb 04__mot_spotDf 04__mot_spotFa</Name_array>
+					<technique_common>
+						<accessor source="#polygon1_JointArr" count="4">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Matrices">
+					<float_array id="polygon1_MatArr" count="64">1 0 0 -3000 0 1 0 -8.7E-05 0 0 1 -2000 0 0 0 1 0.9091017 -0.05952062 -0.9090405 -961.5323 0.03048784 0.9313194 -0.03048535 906.6729 0.2845929 -5.915396E-07 0.2845736 -1315.991 0 0 0 1 -1.038938E-07 0.1108476 -0.9173391 1517.281 -0.01840752 1.130883 0.1366515 -146.103 1.023082 0.01641406 0.001983295 -2266.451 0 0 0 1 -1.90317E-07 -0.04620326 1.553655 -2965.903 -1.524596E-09 0.9463056 0.02814165 -5.843784 -0.3762597 6.059565E-10 -4.607242E-08 1513.879 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_MatArr" count="4" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Weights">
+					<float_array id="polygon1_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon1_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon1_Matrices" />
+				</joints>
+				<vertex_weights count="12">
+					<input semantic="JOINT" offset="0" source="#polygon1_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon1_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon2_Controller">
+			<skin source="#polygon2">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon2_Joints">
+					<Name_array id="polygon2_JointArr" count="4">stg120_MotSpotBb 04__mot_spotDb 04__mot_spotDf 04__mot_spotFa</Name_array>
+					<technique_common>
+						<accessor source="#polygon2_JointArr" count="4">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Matrices">
+					<float_array id="polygon2_MatArr" count="64">1 0 0 -3000 0 1 0 -8.7E-05 0 0 1 -2000 0 0 0 1 0.9091017 -0.05952062 -0.9090405 -961.5323 0.03048784 0.9313194 -0.03048535 906.6729 0.2845929 -5.915396E-07 0.2845736 -1315.991 0 0 0 1 -1.038938E-07 0.1108476 -0.9173391 1517.281 -0.01840752 1.130883 0.1366515 -146.103 1.023082 0.01641406 0.001983295 -2266.451 0 0 0 1 -1.90317E-07 -0.04620326 1.553655 -2965.903 -1.524596E-09 0.9463056 0.02814165 -5.843784 -0.3762597 6.059565E-10 -4.607242E-08 1513.879 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_MatArr" count="4" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Weights">
+					<float_array id="polygon2_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon2_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon2_Matrices" />
+				</joints>
+				<vertex_weights count="12">
+					<input semantic="JOINT" offset="0" source="#polygon2_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon2_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="stg120_MotSpotBb" name="stg120_MotSpotBb" sid="stg120_MotSpotBb" type="JOINT">
+				<translate>3000 8.7E-05 2000</translate>
+				<node id="04__mot_spotDb" name="04__mot_spotDb" sid="04__mot_spotDb" type="JOINT">
+					<translate>-192.0374 -1006.005 -183.7229</translate>
+					<rotate>0 0 1 -3.745883</rotate>
+					<rotate>0 1 0 44.93873</rotate>
+					<rotate>1 0 0 -2.647794</rotate>
+					<scale>0.777038 1.072702 2.4849</scale>
+				</node>
+				<node id="04__mot_spotDf" name="04__mot_spotDf" sid="04__mot_spotDf" type="JOINT">
+					<translate>-787.3345 -34.15489 -350.1255</translate>
+					<rotate>0 0 1 90.00005</rotate>
+					<rotate>0 1 0 83.11003</rotate>
+					<rotate>1 0 0 89.07423</rotate>
+					<scale>1.082266 0.877847 0.977377</scale>
+				</node>
+				<node id="04__mot_spotFa" name="04__mot_spotFa" sid="04__mot_spotFa" type="JOINT">
+					<translate>1023.495 -50.55024 -92.51794</translate>
+					<rotate>0 0 1 -90.00023</rotate>
+					<rotate>0 1 0 -88.29664</rotate>
+					<rotate>1 0 0 90.00023</rotate>
+					<scale>0.643392 1.056328 2.657739</scale>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#stg120_MotSpotBb</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="stg110_spotlight__Add__F__" target="#stg110_spotlight__Add__F__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon1" name="polygon1" type="NODE">
+				<instance_controller url="#polygon1_Controller">
+					<skeleton>#stg120_MotSpotBb</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="stg110_spotlight__Add__F__" target="#stg110_spotlight__Add__F__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon2" name="polygon2" type="NODE">
+				<instance_controller url="#polygon2_Controller">
+					<skeleton>#stg120_MotSpotBb</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="stg110_spotlight__Add__F__" target="#stg110_spotlight__Add__F__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2022-09-19T01:19:04Z</created>
+		<modified>2022-09-19T01:19:04Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="rso_o_fy1_pot02-image" name="rso_o_fy1_pot02">
+			<init_from>
+				<ref>rso_o_fy1_pot02.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="o_fy1_pot02__objOpacity__">
+			<instance_effect url="#o_fy1_pot02__objOpacity__-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="o_fy1_pot02__objOpacity__-fx" name="o_fy1_pot02__objOpacity__">
+			<profile_COMMON>
+				<newparam sid="rso_o_fy1_pot02-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>rso_o_fy1_pot02-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="rso_o_fy1_pot02-sampler">
+					<sampler2D>
+						<source>rso_o_fy1_pot02-surface</source>
+						<instance_image url="#rso_o_fy1_pot02-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="rso_o_fy1_pot02-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="45">0.1975436 -3.020497 0.466866 -0.6604891 0.03864098 -0.2856369 -0.6604891 0.03864098 3.002131 -0.6604891 2.867728 -0.2856369 -0.6604891 2.867728 1.559809 -0.05221605 3.020499 2.045233 -0.05221605 3.020499 0.3226352 4.025787 2.867728 -0.2856369 2.037518 -3.020497 -0.2948241 4.179619 0.03864098 -0.2856369 4.134711 3.020499 0.3226352 0.1375828 -0.01341581 0.4530659 4.884907 -0.01341581 0.4530659 2.241785 -2.698769 0.4556561 0.1375828 -0.01341581 3.207458</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="15" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Normals">
+					<float_array id="polygon0_NormArr" count="81">-0.4893188 -0.8720703 0 -0.9921265 -0.1254272 0 -0.9924927 -0.1224976 0 -1 0 0 -0.2435913 0.9698486 0 -0.1236572 0.9846191 -0.1236572 0 0.9698486 -0.2435913 -0.7498169 -0.6549072 -0.09423828 -0.1519775 -0.1311035 -0.9796753 -0.06359863 -0.05474854 -0.99646 0 0.001159668 -1 0 0 -1 0 0.04296875 0.9990845 0.0009765625 0.02325439 0.9997559 0 0.02728271 0.9996338 0.00201416 0.002563477 1 0.9980469 0.06243896 0 0.9991455 0.04150391 0 0.9989624 0.04510498 0 -0.2275391 -0.6583862 0.7174683 -0.6416626 0.2390747 0.7288208 -0.1957397 0.4454346 0.8736572 0.1472168 -0.9229736 0.3555908 0.7241211 0.03936768 -0.6885986 0.9478149 0.2246704 -0.2261353 0.5754395 -0.5669556 -0.5894165 0.8189087 -0.5734863 0.02294922</float_array>
+					<technique_common>
+						<accessor source="#polygon0_NormArr" count="27" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="60">-0.3948975 0.697876 -0.3227539 1.019165 -0.6636963 1.017822 -0.2780762 1.394531 -0.5063477 1.394775 -0.6014404 1.466797 -0.2879639 1.463501 0.1269531 1.398315 -0.1634521 0.6982422 0.1362305 1.018921 -0.2947998 1.393066 0.1252441 1.392944 -0.3166504 1.019409 0.1428223 1.018921 -0.168457 0.6986084 -0.5067139 1.394531 -0.6650391 1.020752 0.2653809 0.5767822 0.3051758 0.4812012 0.4990234 0.5018311 -0.09228516 0.5789795 -0.04907227 0.4785156 0.7425537 0.4782715 0.7407227 0.5793457 1.304077 0.4788818 1.647583 0.5791016 1.306396 0.5794678 1.654419 0.4790039 -0.3823242 0.6981201 0.1138916 1.463501</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="30" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="o_fy1_pot02__objOpacity__" count="26">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon0_Normals" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 2 2 1 1 1 0 0 0 3 3 3 1 1 1 2 2 2 4 3 4 3 3 3 2 2 2 6 5 6 4 4 4 5 4 5 3 5 3 4 4 4 6 5 6 7 6 7 3 5 3 6 5 6 1 9 1 8 8 8 0 7 0 9 10 9 8 8 8 1 9 1 7 11 7 9 10 9 1 9 1 11 13 12 10 12 11 6 12 10 12 14 13 10 12 11 11 13 12 13 15 14 12 14 13 11 13 12 5 16 15 11 17 12 6 16 10 14 18 16 11 17 12 5 16 15 0 19 19 14 19 18 2 19 17 5 20 21 4 20 20 14 20 18 2 21 17 14 21 18 4 21 20 8 22 23 13 22 22 0 22 19 9 23 26 7 23 25 12 23 24 10 24 27 12 24 24 7 24 25 12 25 24 13 25 22 9 25 26 8 26 23 9 26 26 13 26 22 14 18 16 0 0 28 11 17 12 11 13 12 0 7 28 13 15 14 10 6 29 7 6 7 6 5 6 3 11 3 7 11 7 1 9 1</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="1">stg100_obj_potB_bp1</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="16">1 0 0 -5.972006 0 1 0 6.47821 0 0 1 -5.500289 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="1" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="15">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="stg100_obj_potB_bp1" name="stg100_obj_potB_bp1" sid="stg100_obj_potB_bp1" type="JOINT">
+				<translate>5.972006 -6.47821 5.500289</translate>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#stg100_obj_potB_bp1</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="o_fy1_pot02__objOpacity__" target="#o_fy1_pot02__objOpacity__">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>
