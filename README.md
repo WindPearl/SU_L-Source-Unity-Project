@@ -5,3 +5,5 @@ Here we have a lots of types of source code, begginer codes, intermediate codes 
 
 # Note
 This was made before lurodsil released the new version of the Ring Engine a couple of weeks ago.
+
+Go play ![SU Legacy](https://windpearl.itch.io/su-legacy)
